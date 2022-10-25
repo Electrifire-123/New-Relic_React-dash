@@ -1,0 +1,23 @@
+{
+    "private": true,
+    "name": "ceq-pack",
+    "version": "0.1.0",
+    "scripts": {
+        "start": "nr1 nerdpack:serve",
+        "test": "exit 0"
+    },
+    "nr1": {
+        "uuid": "71d247d1-f55c-4684-88a1-d08373c2e71c"
+    },
+    "dependencies": {
+        "prop-types": "15.7.2",
+        "react": "17.0.2",
+        "react-dom": "17.0.2",
+        "recharts": "^2.1.15"
+    },
+    "browserslist": [
+        "last 2 versions",
+        "not ie < 11",
+        "not dead"
+    ]
+}
