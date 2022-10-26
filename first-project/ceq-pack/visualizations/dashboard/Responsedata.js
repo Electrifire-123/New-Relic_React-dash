@@ -11,7 +11,7 @@ const Responsedata = (props) => {
   // const items = new Array(24).fill().map((_, i) => i + 1);
 
   const load = async () => {
-    const spiderQuery = `SELECT count(*) FROM Public_APICall FACET api`;
+    const spiderQuery = `SELECT count(*) FROM Public_APICall FACET awsAPI`;
     const allServicesData = await nrdbQuery(3653851, spiderQuery);
 
     return allServicesData;
@@ -49,8 +49,8 @@ const Responsedata = (props) => {
       {userdata &&
         userdata.map((d, key) => (
           <div>
-            <h3 onClick={() => props.updateMethod(d.api)}>
-              {d.api} - {d.count}
+            <h3 onClick={() => props.updateMethod(d.awsAPI)}>
+              {d.awsAPI} - {d.count}
             </h3>
           </div>
         ))}
